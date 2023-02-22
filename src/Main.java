@@ -17,7 +17,7 @@ public class Main {
 
         for (int i = 0; i < list.length; i++){
             for(int j = 0; j < list.length; j++){
-                if(i != j && list[i] % 2 == 0){
+                if((i != j) && (list[i] == list[j]) && (list[i] % 2 == 0)){
                     if(!isFind(dublicate, list[i])) {
                         dublicate[startIndex++] = list[i];
                     }
